@@ -53,10 +53,13 @@ if (operacion2 === "par") {
     let par = 0;
     while (par < resultado) {
         par++;
-        if (par % 2 == 0)
-            console.log(par);
+
         let mensaje2 = `Los numeros pares del numero ${resultado} son los siguentes: ${par}`;
-        alert(mensaje2);
+        if (par % 2 == 0) {
+            console.log(par);
+            alert(mensaje2);
+        }
+
     }
 } else {
 
@@ -64,9 +67,12 @@ if (operacion2 === "par") {
     let inpar = 0;
     while (inpar < resultado) {
         inpar++;
-        if (inpar % 2 == 1)
-            console.log(inpar);
         let mensaje3 = `Los numeros pares del numero ${resultado} son los siguentes: ${inpar}`;
-        alert(mensaje3);
+        if (inpar % 2 == 1) {
+            console.log(inpar);
+
+            alert(mensaje3);
+        }
+
     }
 }
